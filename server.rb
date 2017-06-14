@@ -1,8 +1,9 @@
 require 'sinatra'
 
 get '/' do
-  "Hello World"
+  File.new("public/hello.txt").readlines
 end
+
 
 get '/wyncode' do
   "Hello World"
